@@ -1,0 +1,26 @@
+\begindata
+ 
+PATH_VALUES = (
+'/Users/vhue/Desktop/Projects/Europa_Clipper/Planning_public/Input/kernels'
+)
+ 
+PATH_SYMBOLS = ('KERNELS')
+ 
+KERNELS_TO_LOAD = (
+'$KERNELS/JUICE/pck/pck00010.tpc',
+'$KERNELS/JUICE/pck/gm_de431.tpc',
+'$KERNELS/Europa_Clipper/fk/clipper_v16.tf',
+'$KERNELS/Europa_Clipper/fk/earth_topo_201023.tf',
+'$KERNELS/generic/spk/planets/de430.bsp',
+'$KERNELS/Europa_Clipper/spk/earthstns_itrf93_201023.bsp',
+'$KERNELS/Europa_Clipper/spk/dss_23_placeholder_itrf93_201017.bsp',
+'$KERNELS/generic/lsk/naif0012.tls',
+'$KERNELS/Europa_Clipper/sclk/europaclipper_00000.tsc',
+'$KERNELS/generic/pck/earth_070425_370426_predict.bpc',
+'$KERNELS/Europa_Clipper/spk/ndosl_140530_v01.bsp',
+'$KERNELS/Europa_Clipper/fk/ndosl_140530_v01.tf',
+'$KERNELS/Europa_Clipper/ik/clipper_uvs_v07.ti',
+'$KERNELS/Europa_Clipper/spk/21F31_MEGA_L241010_A300411_LP01_V4_scpse_MP.bsp',
+'$KERNELS/Europa_Clipper/ck/21F31/clipper_sa_21F31_V4_Tour_Simulation.bc',
+'$KERNELS/Europa_Clipper/ck/clipper_sc_21F31_V4_Tour_Simulation.bc'
+)

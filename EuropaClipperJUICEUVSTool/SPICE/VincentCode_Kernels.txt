@@ -1,0 +1,33 @@
+
+
+Contains the list of kernels appropriate for each occultation 
+
+\begindata
+
+PATH_VALUES = ( '/Users/sjarmak/EuropaClipper/SPICE/VincentCodeKernels/' )
+
+
+kern_path = 'Users/sjarmak/EuropaClipper/SPICE/VincentCodeKernels/'
+
+KERNELS_TO_LOAD = ( '/Users/sjarmak/EuropaClipper/SPICE/VincentCodeKernels/pck00010.tpc',
+'/Users/sjarmak/vk/gm_de431.tpc',
+'/Users/sjarmak/vk/clipper_v16.tf',
+'/Users/sjarmak/vk/earth_topo_201023.tf',
+'/Users/sjarmak/vk/de430.bsp',
+'/Users/sjarmak/vk/earthstns_itrf93_201023.bsp',
+'/Users/sjarmak/vk/dss_23_placeholder_itrf93_201017.bsp',
+'/Users/sjarmak/vk/naif0012.tls',
+'/Users/sjarmak/vk/europaclipper_00000.tsc',
+'/Users/sjarmak/vk/earth_070425_370426_predict.bpc',
+'/Users/sjarmak/vk/ndosl_140530_v01.bsp',
+'/Users/sjarmak/vk/ndosl_140530_v01.tf',
+'/Users/sjarmak/vk/clipper_uvs_v07.ti',
+'/Users/sjarmak/vk/21F31_MEGA_L241010_A300411_LP01_V4_scpse_MP.bsp',
+'/Users/sjarmak/vk/clipper_sa_21F31_V4_Tour_Simulation.bc',
+'/Users/sjarmak/vk/clipper_sc_21F31_V4_Tour_Simulation.bc'
+		  
+	)
+
+\begintext
+
+		   
