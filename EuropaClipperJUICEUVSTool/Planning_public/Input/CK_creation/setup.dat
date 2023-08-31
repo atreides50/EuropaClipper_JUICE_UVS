@@ -1,0 +1,21 @@
+  \begindata
+LSK_FILE_NAME          = '/Users/vhue/Kernels_SPICE/generic/lsk/naif0012.tls'
+SCLK_FILE_NAME          = '/Users/vhue/Kernels_SPICE/Europa_Clipper/sclk/europaclipper_00000.tsc'
+FRAMES_FILE_NAME          = '/Users/vhue/Kernels_SPICE/Europa_Clipper/fk/clipper_v16.tf'
+INTERNAL_FILE_NAME     = 'dummy pointing of EUROPAM_SPACECRAFT '
+CK_TYPE                =  3
+INSTRUMENT_ID          = -159000
+REFERENCE_FRAME_NAME   = 'J2000'
+ANGULAR_RATE_PRESENT   = 'MAKE UP'
+MAXIMUM_VALID_INTERVAL =  10000000000.
+INPUT_TIME_TYPE        = 'UTC'
+INPUT_DATA_TYPE        = 'EULER ANGLES'
+EULER_ANGLE_UNITS      = 'DEGREES'
+EULER_ROTATIONS_ORDER  = ( 'X', 'Y', 'Z' )
+EULER_ROTATIONS_TYPE   = 'BODY'
+DOWN_SAMPLE_TOLERANCE  = 0.0001
+INCLUDE_INTERVAL_TABLE = 'YES'
+PRODUCER_ID            = 'Vincent Hue, SwRI'
+\begintext
+ 
+ The program expects the angles to be fed into it as X,Y,Z order, but the rotations are done in the BODY reference meaning that the rotations are done Z then Y then X.  Note that for working with UVS the Z rotation is assumed to always be zero.
