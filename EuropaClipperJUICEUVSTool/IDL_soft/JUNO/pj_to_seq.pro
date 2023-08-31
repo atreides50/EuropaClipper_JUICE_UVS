@@ -1,0 +1,55 @@
+pro pj_to_seq, pjname, seqname
+
+  case 1 of
+    pjname eq 'PJ1':  seqname = 'jm0003'
+    pjname eq 'PJ3':  seqname = 'jm0031_g'
+    pjname eq 'PJ4':  seqname = 'jm0041_m'
+    pjname eq 'PJ5':  seqname = 'jm0051_mt'
+    pjname eq 'PJ6':  seqname = 'jm0061_g'
+    pjname eq 'PJ7':  seqname = 'jm0071_m'
+    pjname eq 'PJ8':  seqname = 'jm0081_g'
+    pjname eq 'PJ9':  seqname = 'jm0091_mt'
+    pjname eq 'PJ10': seqname = 'jm0101_g'
+    pjname eq 'PJ11': seqname = 'jm0111_g'
+    pjname eq 'PJ12': seqname = 'jm0121_mt'
+    pjname eq 'PJ13': seqname = 'jm0131_g'
+    pjname eq 'PJ14': seqname = 'jm0141_g'
+    pjname eq 'PJ15': seqname = 'jm0151_g'
+    pjname eq 'PJ16': seqname = 'jm0161_mt'
+    pjname eq 'PJ17': seqname = 'jm0171_g'
+    pjname eq 'PJ18': seqname = 'jm0181_g'
+    pjname eq 'PJ19': seqname = 'jm0191_mxt'
+    pjname eq 'PJ20': seqname = 'jm0201_mt'
+    pjname eq 'PJ21': seqname = 'jm0211_g'
+    pjname eq 'PJ22': seqname = 'jm0221_g'
+    pjname eq 'PJ23': seqname = 'jm0231_g'
+    pjname eq 'PJ24': seqname = 'jm0241_rmi'
+    pjname eq 'PJ25': seqname = 'jm0251_g'
+    pjname eq 'PJ26': seqname = 'jm0261_mt'
+    pjname eq 'PJ27': seqname = 'jm0271_g'
+    pjname eq 'PJ28': seqname = 'jm0281_g'
+    pjname eq 'PJ29': seqname = 'jm0291_g'
+    pjname eq 'PJ30': seqname = 'jm0301_g'
+    pjname eq 'PJ31': seqname = 'jm0311_g'
+    pjname eq 'PJ32': seqname = 'jm0321_g'
+    pjname eq 'PJ33': seqname = 'jm0331_g'
+    pjname eq 'PJ34': seqname = 'jm0340_g'
+    pjname eq 'PJ35': seqname = 'jm0350_g'
+    pjname eq 'PJ36': seqname = 'jm0360_g'
+    pjname eq 'PJ37': seqname = 'jm0370_g'
+    pjname eq 'PJ38': seqname = 'jm0380_mx'
+    pjname eq 'PJ39': seqname = 'jm0390_g'
+    pjname eq 'PJ40': seqname = 'jm0400_g'
+    pjname eq 'PJ41': seqname = 'jm0410_g'
+    pjname eq 'PJ42': seqname = 'jm0420_g'
+    pjname eq 'PJ43': seqname = 'jm0430_g'
+    pjname eq 'PJ44': seqname = 'jm0430_m'
+    else: stop, 'error, pjname ne Pjx'
+  endcase
+  
+seqname = seqname+'_new'
+
+
+return
+end
+
