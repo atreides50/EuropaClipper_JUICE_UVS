@@ -12,7 +12,7 @@ n_pix = n_elements(lat_pixel[*,0])
 n_t = n_elements(time_array_et)
 
 ; Load albedo moon
-path = '/Users/sjarmak/EuropaClipper/Planning/Input/Moon_AlbedoMaps/'
+path = path + 'Planning/Input/Moon_AlbedoMaps/'
 CASE 1 OF
   moon eq 'Io': begin
     albedo_file = path+'Io_AlbedoMaps.sav'
