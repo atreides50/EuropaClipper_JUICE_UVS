@@ -6,7 +6,7 @@ n_t = n_elements(time_array_et)
 n_w = n_elements(wvl)
 detector_counts_radiation = dblarr(n_w, n_pix_y, n_t)
 
-file_sav = '/Users/sjarmak/EuropaClipper/Planning/Input/lookup_table_cyl_20220729.sav'
+file_sav = path + 'Planning/Input/lookup_table_cyl_20220729.sav'
 
 if file_test(file_sav) eq 0 then begin
   rad_file_juno = '/Users/sjarmak/EuropaClipper/Planning/Input/lookup_table_cyl_20220729.csv'
