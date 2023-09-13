@@ -46,14 +46,14 @@ init_variable, sc_range_jupiter, sc_range_jupiter_RJ, subsc_jupiter_lat, subsc_j
  CASE 1 OF
    spacecraft eq 'Europa': begin
      spacecraft_id = '-159'
-     file_eff_area = '/Users/sjarmak/Europa_Clipper/Effective_area/Ouput/Europa_UVS_EffArea_20220331.sav'
+     file_eff_area = path + 'SPICE/Effective_area/Ouput/Europa_UVS_EffArea_20220331.sav'
      file_wavelength_solution = '/Users/sjarmak/Europa_Clipper/Effective_area/Wavelength_solution/wavelength_solution_europa.sav'
      sr_per_pix =  0.0075 * 0.1 * (!Dpi/180)^2 ; pixels are 0.1˚ x 0.0075˚ (per M Davis Europa-UVS ENGINEERING MEMORANDUM)
    end
    spacecraft eq 'JUICE': begin
      spacecraft_id = '-28'
-     file_eff_area = '/Users/vhue/Desktop/Projects/Europa_Clipper/Effective_area/Ouput/JUICE_UVS_EffArea_20220331.sav'
-     file_wavelength_solution = '/Users/vhue/Desktop/Projects/JUICE/Effective_area/Wavelength_solution/wavelength_solution_juice.sav'
+     file_eff_area = path + 'SPICE/Effective_area/Ouput/JUICE_UVS_EffArea_20220331.sav'
+     file_wavelength_solution = path + 'SPICE/Effective_area/Wavelength_solution/wavelength_solution_juice.sav'
      sr_per_pix = -999. ; TODO
    end
  end
