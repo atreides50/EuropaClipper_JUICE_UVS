@@ -39,7 +39,7 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
   ;Plotting parameters
   csz = 1.6
   symb = 2
-  plot_win = 1
+  plot_win = 0
 
   ;path = '/Users/sjarmak/EuropaClipperJUICEUVSTool/'
   if (getenv("UVSPATH")) eq '' then begin
