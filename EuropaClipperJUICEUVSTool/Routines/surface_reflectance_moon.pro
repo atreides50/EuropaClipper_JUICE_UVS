@@ -38,7 +38,7 @@ ea_SP_pix = rebin(interpol(ea_SP, w_ea, wvl), n_w, n_pix) * 1d-4 ; [m2]
 
 
 ; Load albedo moon
-path = '/Users/sjarmak/EuropaClipper/Planning/Input/Moon_AlbedoMaps/'
+path = path + 'Planning/Input/Moon_AlbedoMaps/'
 CASE 1 OF
   moon eq 'Io': begin
     albedo_file = path+'Io_AlbedoMaps.sav'
