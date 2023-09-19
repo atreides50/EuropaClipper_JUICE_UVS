@@ -38,28 +38,27 @@ ea_SP_pix = rebin(interpol(ea_SP, w_ea, wvl), n_w, n_pix) * 1d-4 ; [m2]
 
 
 ; Load albedo moon
-path = '/Users/vhue/Desktop/Projects/Europa_Clipper/Planning/Input/Moon_AlbedoMaps/'
 CASE 1 OF
   moon eq 'Io': begin
-    albedo_file = path+'Io_AlbedoMaps.sav'
+    albedo_file = path+'Planning/Input/Moon_AlbedoMaps/Io_AlbedoMaps.sav'
     restore, albedo_file, /verbose
     Albedo_norm = IO_NORM
     Albedo_UV = IO_UV
   end
   moon eq 'Europa': begin
-    albedo_file = path+'Europa_AlbedoMaps.sav'
+    albedo_file = path+'Planning/Input/Moon_AlbedoMaps/Europa_AlbedoMaps.sav'
     restore, albedo_file, /verbose
     Albedo_norm = EUROPA_NORM
     Albedo_UV = EUROPA_UV
   end
   moon eq 'Ganymede': begin
-    albedo_file = path+'Ganymede_AlbedoMaps.sav'
+    albedo_file = path+'Planning/Input/Moon_AlbedoMaps/Ganymede_AlbedoMaps.sav'
     restore, albedo_file, /verbose
     Albedo_norm = GANYMEDE_NORM
     Albedo_UV = GANYMEDE_UV
   end
   moon eq 'Callisto': begin
-    albedo_file = path+'Callisto_AlbedoMaps.sav'
+    albedo_file = path+'Planning/Input/Moon_AlbedoMaps/Callisto_AlbedoMaps.sav'
     restore, albedo_file, /verbose
     Albedo_norm = CALLISTO_NORM
     Albedo_UV = CALLISTO_UV
