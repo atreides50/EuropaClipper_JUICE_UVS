@@ -1,4 +1,4 @@
-pro radiation_detector, spacecraft, spacecraft_id, time_array_et, time_array_utc, n_pix_y, moon, w_ea, ea_AP, ea_SP, wvl, irrad, $
+pro radiation_detector, path, spacecraft, spacecraft_id, time_array_et, time_array_utc, n_pix_y, moon, w_ea, ea_AP, ea_SP, wvl, irrad, $
                         rho_dip_sc_RJ, z_dip_sc_RJ, detector_counts_radiation
 
 

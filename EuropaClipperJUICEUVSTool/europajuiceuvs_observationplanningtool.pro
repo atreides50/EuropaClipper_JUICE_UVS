@@ -48,10 +48,10 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
   path = getenv("UVSPATH")
   
   ;path= "/Users/sjarmak/EuropaClipperJUICEUVSTool/"
-  meta_kernel = path + 'Kernels/metakernel_test.ker'
+  ; meta_kernel = path + 'Kernels/metakernel_test.ker'
 
   ; @@@@@@@@@@@@@@@@@ SPICE SET UP @@@@@@@@@@@@@@@@@ 
-  publicpath = path + 'Planning_public/'
+  publicpath = path + '/Planning_public/'
   moon = 'Europa'
 
 
@@ -88,6 +88,7 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
 
   ; @@@@@@@@@@@@@@@@@ SPICE SET UP @@@@@@@@@@@@@@@@@
   kernfile = path + 'SPICE/VincentCode_Kernels.txt'
+  kernfile = meta_kernel
   cspice_furnsh, kernfile
 
 
@@ -122,7 +123,7 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
 
   ;stop
 
-  load_solar_spectrum, wvl, irrad
+  load_solar_spectrum, path, wvl, irrad
 
   ; Restore the wavelength solution
 
@@ -174,7 +175,7 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
   endcase
 
 
-  radiation_detector, spacecraft, spacecraft_id, time_array_et, time_array_utc, n_pix_y, moon, w_ea, ea_AP, ea_SP, wvl, irrad, $
+  radiation_detector, path, spacecraft, spacecraft_id, time_array_et, time_array_utc, n_pix_y, moon, w_ea, ea_AP, ea_SP, wvl, irrad, $
     rho_dip_sc_RJ, z_dip_sc_RJ, detector_counts_radiation
 
   add_counting_noise, detector_counts_radiation, detector_counts_radiation_noise
@@ -184,7 +185,7 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
 
   spawn, 'rm '+file_refl
   if file_test(file_refl) eq 0 then begin
-    surface_reflectance_moon, spacecraft, spacecraft_id, time_array_et, time_array_utc, moon, w_ea, ea_AP, ea_SP, sr_per_pix, wvl, irrad, $
+    surface_reflectance_moon, path, spacecraft, spacecraft_id, time_array_et, time_array_utc, moon, w_ea, ea_AP, ea_SP, sr_per_pix, wvl, irrad, $
       lat_pixel_AP, lon_pixel_AP, pixel_incidence_angle_AP, pixel_emission_angle_AP, pixel_phase_angle_AP, dist_pixel_AP, $
       lat_pixel_SP, lon_pixel_SP, pixel_incidence_angle_SP, pixel_emission_angle_SP, pixel_phase_angle_SP, dist_pixel_SP, $
       detector_counts_AP, detector_counts_SP

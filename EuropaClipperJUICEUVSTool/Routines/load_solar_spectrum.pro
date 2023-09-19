@@ -1,4 +1,4 @@
-pro load_solar_spectrum, wvl, irrad
+pro load_solar_spectrum, path, wvl, irrad
 
 ; Load solar spectrum
 solar_spec = READ_CSV(path + 'Planning_public/Input/solarspec.csv')

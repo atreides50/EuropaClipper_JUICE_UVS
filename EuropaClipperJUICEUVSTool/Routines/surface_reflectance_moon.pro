@@ -1,4 +1,4 @@
-pro surface_reflectance_moon, spacecraft, spacecraft_id, time_array_et, time_array_utc, moon, w_ea, ea_AP, ea_SP, sr_per_pix, wvl, irrad, $
+pro surface_reflectance_moon, path, spacecraft, spacecraft_id, time_array_et, time_array_utc, moon, w_ea, ea_AP, ea_SP, sr_per_pix, wvl, irrad, $
                              lat_pixel_AP, lon_pixel_AP, pixel_incidence_angle_AP, pixel_emission_angle_AP, pixel_phase_angle_AP, dist_pixel_AP, $
                              lat_pixel_SP, lon_pixel_SP, pixel_incidence_angle_SP, pixel_emission_angle_SP, pixel_phase_angle_SP, dist_pixel_SP, $
                              detector_counts_AP, detector_counts_SP
