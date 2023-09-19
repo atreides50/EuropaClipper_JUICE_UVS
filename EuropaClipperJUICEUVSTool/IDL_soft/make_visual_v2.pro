@@ -12,28 +12,27 @@ n_pix = n_elements(lat_pixel[*,0])
 n_t = n_elements(time_array_et)
 
 ; Load albedo moon
-path = '/Users/vhue/Desktop/Projects/Europa_Clipper/Planning/Input/Moon_AlbedoMaps/'
 CASE 1 OF
   moon eq 'Io': begin
-    albedo_file = path+'Io_AlbedoMaps.sav'
+    albedo_file = path+'Planning/Input/Moon_AlbedoMaps/Io_AlbedoMaps.sav'
     restore, albedo_file, /verbose
     Albedo_norm = IO_NORM
     Albedo_UV = IO_UV
   end
   moon eq 'Europa': begin
-    albedo_file = path+'Europa_AlbedoMaps.sav'
+    albedo_file = path+'Planning/Input/Moon_AlbedoMaps/Europa_AlbedoMaps.sav'
     restore, albedo_file, /verbose
     Albedo_norm = EUROPA_NORM
     Albedo_UV = EUROPA_UV
   end
   moon eq 'Ganymede': begin
-    albedo_file = path+'Ganymede_AlbedoMaps.sav'
+    albedo_file = path+'Planning/Input/Moon_AlbedoMaps/Ganymede_AlbedoMaps.sav'
     restore, albedo_file, /verbose
     Albedo_norm = GANYMEDE_NORM
     Albedo_UV = GANYMEDE_UV
   end
   moon eq 'Callisto': begin
-    albedo_file = path+'Callisto_AlbedoMaps.sav'
+    albedo_file = path+'Planning/Input/Moon_AlbedoMaps/Callisto_AlbedoMaps.sav'
     restore, albedo_file, /verbose
     Albedo_norm = CALLISTO_NORM
     Albedo_UV = CALLISTO_UV
@@ -107,7 +106,7 @@ endfor
 ;stop
 
 for it = 0, n_t-1 do begin
-  ;plotpath = '/Users/vhue/Desktop/Projects/Europa_Clipper/Planning/Plots/'
+  plotpath = path + 'Planning/Plots/'
   fname = plotpath+strmid(time_array_utc[it],0,4)+strmid(time_array_utc[it],5,2)+strmid(time_array_utc[it],8,2)+'T'+strmid(time_array_utc[it],11,2)+strmid(time_array_utc[it],14,2)+strmid(time_array_utc[it],17,2)+'_'+label_plot
   plotps3, fname+'.ps', /quiet
   device, decomposed=1
