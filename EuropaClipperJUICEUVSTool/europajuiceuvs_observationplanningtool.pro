@@ -51,7 +51,7 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
   ; meta_kernel = path + 'Kernels/metakernel_test.ker'
 
   ; @@@@@@@@@@@@@@@@@ SPICE SET UP @@@@@@@@@@@@@@@@@ 
-  publicpath = path + '/Planning_public/'
+  publicpath = path + 'Planning_public/'
   moon = 'Europa'
 
 
