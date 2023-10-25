@@ -1,6 +1,6 @@
 \begindata
 
-PATH_VALUES = ( '/raid/jkammer/Research/Europa/SimTool/EuropaClipper_JUICE_UVS/EuropaClipperJUICEUVSTool/SPICE/VincentCodeKernels' )
+PATH_VALUES = ( '/raid/jkammer/Research/Europa/SPICE/VincentCodeKernels' )
 PATH_SYMBOLS = ( 'ST' )
 
 KERNELS_TO_LOAD = ( 
