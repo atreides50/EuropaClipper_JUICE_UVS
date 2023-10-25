@@ -88,7 +88,7 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
 
   ; @@@@@@@@@@@@@@@@@ SPICE SET UP @@@@@@@@@@@@@@@@@
   kernfile = path + 'SPICE/VincentCode_Kernels.txt'
-  kernfile = meta_kernel
+  ;kernfile = meta_kernel
   cspice_furnsh, kernfile
 
 
