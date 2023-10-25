@@ -43,7 +43,7 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
 
   ;path = '/Users/sjarmak/EuropaClipperJUICEUVSTool/'
   if (getenv("UVSPATH")) eq '' then begin
-  SETENV, "UVSPATH=/Users/sjarmak/Desktop/EuropaClipperJUICEUVSTool/"
+  SETENV, "UVSPATH=/raid/jkammer/Research/Europa/SimTool/EuropaClipper_JUICE_UVS/EuropaClipperJUICEUVSTool/"
   end
   path = getenv("UVSPATH")
   
