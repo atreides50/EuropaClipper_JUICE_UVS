@@ -207,9 +207,9 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
 
   plotpath = path+'Plots/'+label_time+'/'
   make_visual_v2, path, plotpath, 'Refl_Rad', spacecraft, spacecraft_id, time_array_et, time_array_utc, moon, lat_pixel_AP, lon_pixel_AP, detector_counts_AP+detector_counts_radiation_noise, wvl
-  ;stop
+  stop
   make_visual_v2, path, plotpath, 'Radiation', spacecraft, spacecraft_id, time_array_et, time_array_utc, moon, lat_pixel_AP, lon_pixel_AP, detector_counts_radiation_noise, wvl
-  ;stop
+  stop
   make_visual_v2, path, plotpath, 'Reflected', spacecraft, spacecraft_id, time_array_et, time_array_utc, moon, lat_pixel_AP, lon_pixel_AP, detector_counts_AP, wvl
   stop
 
