@@ -45,7 +45,7 @@ pro EuropaJUICEUVS_ObservationPlanningTool, path, t0, t1, n_exposure, spacecraft
   if (getenv("UVSPATH")) eq '' then begin
   SETENV, "UVSPATH=/raid/jkammer/Research/Europa/SimTool/EuropaClipper_JUICE_UVS/EuropaClipperJUICEUVSTool/"
   end
-  path = getenv("UVSPATH")
+  path = '/raid/jkammer/Research/Europa/SimTool/EuropaClipper_JUICE_UVS/EuropaClipperJUICEUVSTool/'
   
   ;path= "/Users/sjarmak/EuropaClipperJUICEUVSTool/"
   ; meta_kernel = path + 'Kernels/metakernel_test.ker'
