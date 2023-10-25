@@ -117,7 +117,7 @@ for it = 0, n_t-1 do begin
 
   gamma_ct, gamma_val
   cgcolorbar, minrange=0., maxrange=max(detector_counts[*,*,*])/2, position=[0.95, 0.5, 0.99, 0.9], TITLE='UVS countrate [counts/s]', minor=10, /vertical, charsize=csz-0.6
-  endps
+  endps_gse
   spawn, 'ps2pdf '+fname+'.ps '+fname+'.pdf'
   ;stop
   
