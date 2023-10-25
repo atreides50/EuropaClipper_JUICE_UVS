@@ -20,7 +20,7 @@ CASE 1 OF
     Albedo_UV = IO_UV
   end
   moon eq 'Europa': begin
-    albedo_file = path+'Planning/Input/Moon_AlbedoMaps/Europa_AlbedoMaps.sav'
+    albedo_file = '/raid/jkammer/Research/Europa/SimTool/EuropaClipper_JUICE_UVS/EuropaClipperJUICEUVSTool/Planning/Input/Moon_AlbedoMaps/Europa_AlbedoMaps.sav'
     restore, albedo_file, /verbose
     Albedo_norm = EUROPA_NORM
     Albedo_UV = EUROPA_UV
