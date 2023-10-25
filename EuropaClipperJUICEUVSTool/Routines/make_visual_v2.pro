@@ -1,4 +1,4 @@
-pro make_visual_v2, plotpath, label_plot, spacecraft, spacecraft_id, time_array_et, time_array_utc, moon, lat_pixel, lon_pixel, detector_counts, wvl
+pro make_visual_v2, path, plotpath, label_plot, spacecraft, spacecraft_id, time_array_et, time_array_utc, moon, lat_pixel, lon_pixel, detector_counts, wvl
 
 ;Plotting
 csz = 1.6
