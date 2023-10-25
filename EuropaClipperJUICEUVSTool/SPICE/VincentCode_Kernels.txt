@@ -1,25 +1,25 @@
 \begindata
 
-PATH_VALUES = ( '/raid/jkammer/Research/Europa/SPICE/VincentCodeKernels' )
+PATH_VALUES = ( '/raid/jkammer/Research/Europa/SPICE' )
 PATH_SYMBOLS = ( 'ST' )
 
 KERNELS_TO_LOAD = ( 
-'$ST/pck00010.tpc'
-'$ST/gm_de431.tpc'
-'$ST/clipper_v16.tf'
-'$ST/earth_topo_201023.tf'
-'$ST/de430.bsp'
-'$ST/earthstns_itrf93_201023.bsp'
-'$ST/dss_23_placeholder_itrf93_201017.bsp'
-'$ST/naif0012.tls'
-'$ST/europaclipper_00000.tsc'
-'$ST/earth_070425_370426_predict.bpc'
-'$ST/ndosl_140530_v01.bsp'
-'$ST/ndosl_140530_v01.tf'
-'$ST/clipper_uvs_v07.ti'
-'$ST/21F31_MEGA_L241010_A300411_LP01_V4_scpse_MP.bsp'
-'$ST/clipper_sa_21F31_V4_Tour_Simulation.bc'
-'$ST/clipper_sc_21F31_V4_Tour_Simulation.bc'
+'$ST/VincentCodeKernels/pck00010.tpc'
+'$ST/VincentCodeKernels/gm_de431.tpc'
+'$ST/VincentCodeKernels/clipper_v16.tf'
+'$ST/VincentCodeKernels/earth_topo_201023.tf'
+'$ST/spk/de432s.bsp'
+'$ST/VincentCodeKernels/earthstns_itrf93_201023.bsp'
+'$ST/VincentCodeKernels/dss_23_placeholder_itrf93_201017.bsp'
+'$ST/VincentCodeKernels/naif0012.tls'
+'$ST/VincentCodeKernels/europaclipper_00000.tsc'
+'$ST/VincentCodeKernels/earth_070425_370426_predict.bpc'
+'$ST/VincentCodeKernels/ndosl_140530_v01.bsp'
+'$ST/VincentCodeKernels/ndosl_140530_v01.tf'
+'$ST/VincentCodeKernels/clipper_uvs_v07.ti'
+'$ST/VincentCodeKernels/21F31_MEGA_L241010_A300411_LP01_V4_scpse_MP.bsp'
+'$ST/VincentCodeKernels/clipper_sa_21F31_V4_Tour_Simulation.bc'
+'$ST/VincentCodeKernels/clipper_sc_21F31_V4_Tour_Simulation.bc'
 )
 
 \begintext
